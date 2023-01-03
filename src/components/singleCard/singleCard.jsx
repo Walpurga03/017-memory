@@ -1,4 +1,5 @@
-import './SingleCard.scss';
+import './singleCard.scss';
+import coverImg from './image/cover.png';
 
 const SingleCard = ({card, handleChoice, flipped, disabled}) => {
   const handleClick = () => {
@@ -13,7 +14,7 @@ const SingleCard = ({card, handleChoice, flipped, disabled}) => {
         <img src={card.src} alt="card front" className="front" />
         <img 
           className='back' 
-          src="/img/cover.png" 
+          src={coverImg}
           alt="cover"
           onClick={handleClick} />
       </div>

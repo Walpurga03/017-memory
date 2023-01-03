@@ -1,16 +1,17 @@
+import './App.css';
 import { useState, useEffect } from 'react'
-import './App.css'
-import SingleCard from './components/SingleCard'
-import ShitRain from './components/ShitRain'
-
+import SingleCard from './components/singleCard/singleCard'
+import ShitRain from './components/shitRain/shitRain'
 
 const cardImages = [
-  { "src": "/img/image-1.png", matched: false },
-  { "src": "/img/image-2.png", matched: false },
-  { "src": "/img/image-3.png", matched: false },
-  { "src": "/img/image-4.png", matched: false },
-  { "src": "/img/image-5.png", matched: false },
-  { "src": "/img/image-6.png", matched: false },
+  { "src": "/img/image-11.jpg", matched: false },
+  { "src": "/img/image-12.jpg", matched: false },
+  { "src": "/img/image-13.jpg", matched: false },
+  { "src": "/img/image-14.jpg", matched: false },
+  { "src": "/img/image-15.jpg", matched: false },
+  { "src": "/img/image-16.jpg", matched: false },
+  { "src": "/img/image-17.jpg", matched: false },
+  { "src": "/img/image-18.jpg", matched: false }
 ]
 
 const App = () => {
@@ -61,7 +62,7 @@ const App = () => {
   }, [choiceOne, choiceTwo])
 
   const win = () => {
-    if(hits === 6) {
+    if(hits === 8) {
     return(
       <ShitRain />
     )
@@ -81,6 +82,8 @@ const App = () => {
     shuffleCards()
   },[])
 
+
+
   return (
     <div className="App">
       <h1>Bitcoin Memory</h1>
@@ -98,9 +101,10 @@ const App = () => {
       </div>
         {win()}
         <p>Versuche: {turns}</p>
-      
+        <div className="lightning">
+        </div>
     </div>
-  );
+  )
 }
 
 export default App;

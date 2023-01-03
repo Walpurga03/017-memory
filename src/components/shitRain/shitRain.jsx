@@ -1,8 +1,8 @@
-import './ShitRain.scss'
-import bild01 from '../image/btc-1.png'
-import bild02 from '../image/btc-2.png'
-import bild03 from '../image/btc-3.png'
-import bild04 from '../image/btc-4.png'
+import './shitRain.scss'
+import bild01 from './image/btc-1.png'
+import bild02 from './image/btc-2.png'
+import bild03 from './image/btc-3.png'
+import bild04 from './image/btc-4.png'
 
 import React, {useState} from 'react';
 import styled from 'styled-components';
