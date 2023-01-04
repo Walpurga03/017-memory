@@ -86,7 +86,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Bitcoin Memory</h1>
+     <h1>Bitcoin Memory</h1>
       <button onClick={shuffleCards}>Neues Spiel</button>
       <div className="card-grid">
         {cards.map(card => (
@@ -101,8 +101,6 @@ const App = () => {
       </div>
         {win()}
         <p>Versuche: {turns}</p>
-        <div className="lightning">
-        </div>
     </div>
   )
 }
