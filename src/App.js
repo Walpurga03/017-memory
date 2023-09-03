@@ -99,8 +99,15 @@ const App = () => {
           />
         ))}
       </div>
+      <div className='turns'>
         {win()}
         <p>Versuche: {turns}</p>
+      </div>
+      <div className="lightning">
+        
+      </div>
+      
+      
     </div>
   )
 }
